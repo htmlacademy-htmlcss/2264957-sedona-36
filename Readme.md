@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Artur  Pletnev](https://up.htmlacademy.ru/htmlcss/36/user/2264957).
-* Наставник: `Дамир Масалимов`.
+* Наставник: [Дамир Масалимов](https://htmlacademy.ru/profile/damirmas).
 
 
 
