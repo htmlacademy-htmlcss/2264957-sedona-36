@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -40,9 +40,18 @@ body {
 }
 
 .hero {
-  background-image: url(/images/index-background.jpg);
-  height: 485px;
-  width: 1200px;
+  background-color: #1B313F;
+  background-image: url(../images/index-background.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.advantages-item {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-color {
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .title-items {
@@ -86,15 +95,20 @@ body {
   text-align: center;
 }
 
-.main-units {
+.recommendation-item-color {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.main-unit {
-  background-color: rgba(131, 179, 211, 0.2);
+.recommendation-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
 }
 
-.button-search-button {
+.button-search {
   background-color: #756157;
   font-weight: 700;
   font-size: 20px;
@@ -106,9 +120,10 @@ body {
 }
 
 .subscribe {
-  background-image: url("/images/main-subscribe-background.jpg");
-  width: 1200px;
-  height: 414.86px;
+  background-color: #1B313F;
+  background-image: url("../images/main-subscribe-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -123,7 +138,7 @@ body {
   line-height: 26px;
 }
 
-.button-subscribe-button {
+.button-subscribe {
   background-color: #82B3D3;
   font-weight: 700;
   font-size: 20px;
