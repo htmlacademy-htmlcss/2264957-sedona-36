@@ -14,7 +14,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 22px;
@@ -22,6 +30,29 @@ body {
   color: #333333;
   background-color: #ffffff;
 }
+
+/*
+.advantages {
+  display: none;
+}
+
+.recommendation {
+  display: none;
+}
+
+.search-hotel {
+  display: none;
+}
+
+.subscribe {
+  display: none;
+}
+*/
+
+
+
+
+/* Навигация */
 
 .page-header {
   color: #333333;
@@ -39,11 +70,58 @@ body {
   text-transform: capitalize;
 }
 
+
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 507px;
+}
+
+.navigation-user {
+  width: 268px;
+  margin-left: auto;
+}
+
+/* main */
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* hero*/
+
+.main-text {
+  display: block;
+  margin: 0 auto;
+}
+
 .hero {
   background-color: #1B313F;
   background-image: url(../images/index-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+/* advantages*/
+
+.advantagest-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-item {
@@ -94,8 +172,20 @@ body {
   line-height: 21px;
   text-align: center;
 }
+/* recommendation*/
 
-.recommendation-item-color {
+.recommendation-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.recommendation-item {
+  width: 400px;
+}
+
+.color {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -147,6 +237,18 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
 }
+/* footer */
+
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-social-list {
+  display: flex;
+  width: 146px;
+}
 
 .contacts-phone {
   font-weight: 400;
@@ -156,4 +258,13 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+}
+
+.contacts-phone {
+  margin: 0 auto;
+  width: 331;
+}
+
+logo-footer {
+  width: 115;
 }
