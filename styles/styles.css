@@ -28,8 +28,9 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
-  background-color: #ffffff;
 }
+
+/* for sticky footer */
 
 /*
 .advantages {
@@ -172,6 +173,7 @@ body {
   line-height: 21px;
   text-align: center;
 }
+
 /* recommendation*/
 
 .recommendation-list {
@@ -237,6 +239,7 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
 }
+
 /* footer */
 
 .page-footer-container {
