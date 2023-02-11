@@ -18,6 +18,18 @@ html {
   height: 100%;
 }
 
+/*
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+*/
 body {
   margin: 0;
   display: flex;
@@ -60,7 +72,11 @@ body {
   background-color: #ffffff;
 }
 
+
+
 .navigation-link {
+  display: block;
+  padding: 20px 16px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -80,9 +96,12 @@ body {
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 507px;
+  list-style-type: none;
 }
 
 .navigation-user {
@@ -90,10 +109,18 @@ body {
   margin-left: auto;
 }
 
+.navigation-user .navigation-link {
+  min-width: 12px;
+  min-height: 22px;
+}
+
+
+
 /* main */
 
 .main-container {
   flex-grow: 1;
+  padding-top: 51px;
 }
 
 .page-container {
@@ -113,6 +140,7 @@ body {
   background-image: url(../images/index-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
+  margin-bottom: 69px;
 }
 
 /* advantages*/
@@ -123,6 +151,7 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .advantages-item {
@@ -140,6 +169,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  margin-bottom: 25px;
 }
 
 .title-paragraph {
@@ -148,12 +178,14 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
+  margin-bottom: 69px;
 }
 
 .index-columns {
   color: #FFFFFF;
   background-color: #82B3D3;
-}
+  padding-top: 62px;
+  }
 
 .index-columns p {
   color: #FFFFFF;
@@ -165,6 +197,7 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 101px;
 }
 
 .advantages-description {
@@ -172,7 +205,10 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  margin-bottom: 101px;
 }
+
+
 
 /* recommendation*/
 
@@ -181,6 +217,7 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .recommendation-item {
@@ -199,6 +236,12 @@ body {
   text-transform: uppercase;
   color: #000000;
 }
+
+.recommendation-list {
+  margin-bottom: 96px;
+}
+
+/*search*/
 
 .button-search {
   background-color: #756157;
@@ -238,6 +281,10 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+.search-hotel {
+  margin-bottom: 96px;
 }
 
 /* footer */
