@@ -107,11 +107,24 @@ body {
 .navigation-user {
   width: 268px;
   margin-left: auto;
+  margin-right: 70px;
 }
 
 .navigation-user .navigation-link {
   min-width: 12px;
   min-height: 22px;
+}
+
+.navigation-button {
+  width: 160px;
+  height: 36px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #756157;
+  border-radius: 4px;
+  padding: 8px 50px;
+  margin-bottom: 14px;
+  margin-left: 20px;
 }
 
 
@@ -132,7 +145,6 @@ body {
 .main-text {
   display: block;
   margin: 0 auto;
-  padding-top: 51px;
 }
 
 .hero {
@@ -140,18 +152,24 @@ body {
   background-image: url(../images/index-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
-  margin-bottom: 69px;
+  padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 /* advantages*/
 
-.advantagest-list {
+.advantages {
+  padding-top: 69px;
+}
+
+.advantages-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  margin-top: 21px;
 }
 
 .advantages-item {
@@ -169,7 +187,6 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin-bottom: 25px;
 }
 
 .title-paragraph {
@@ -178,7 +195,6 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
-  margin-bottom: 69px;
 }
 
 .index-columns {
@@ -212,12 +228,17 @@ body {
 
 /* recommendation*/
 
+.recommendation {
+  padding-top: 64px;
+}
+
 .recommendation-list {
   display: flex;
   justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  margin-top: 64px;
 }
 
 .recommendation-item {
@@ -237,10 +258,6 @@ body {
   color: #000000;
 }
 
-.recommendation-list {
-  margin-bottom: 96px;
-}
-
 /*search*/
 
 .button-search {
@@ -255,7 +272,8 @@ body {
 }
 
 .search-hotel {
-  margin-bottom: 96px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 /*subscribe*/
@@ -288,19 +306,10 @@ body {
   color: #FFFFFF;
 }
 
-.subscribe-title {
-  margin-bottom: 20px;
+.subscribe {
   padding-top: 96px;
+  padding-bottom: 104px;
 }
-
-
-.subscribe-form .button-subscribe {
-  margin-bottom: 104px;
-}
-
-
-
-
 
 /* footer */
 
@@ -308,7 +317,8 @@ body {
   display: flex;
   width: 1200px;
   margin: 0 auto;
-  padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 .footer-social-list {
