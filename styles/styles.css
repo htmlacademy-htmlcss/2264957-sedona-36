@@ -18,7 +18,7 @@ html {
   height: 100%;
 }
 
-/*
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -29,7 +29,7 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-*/
+
 body {
   margin: 0;
   display: flex;
@@ -120,7 +120,6 @@ body {
 
 .main-container {
   flex-grow: 1;
-  padding-top: 51px;
 }
 
 .page-container {
@@ -133,6 +132,7 @@ body {
 .main-text {
   display: block;
   margin: 0 auto;
+  padding-top: 51px;
 }
 
 .hero {
@@ -185,7 +185,7 @@ body {
   color: #FFFFFF;
   background-color: #82B3D3;
   padding-top: 62px;
-  }
+}
 
 .index-columns p {
   color: #FFFFFF;
@@ -254,6 +254,11 @@ body {
   color: #FFFFFF;
 }
 
+.search-hotel {
+  margin-bottom: 96px;
+}
+
+/*subscribe*/
 .subscribe {
   background-color: #1B313F;
   background-image: url("../images/main-subscribe-background.jpg");
@@ -283,9 +288,18 @@ body {
   color: #FFFFFF;
 }
 
-.search-hotel {
-  margin-bottom: 96px;
+.subscribe-title {
+  margin-bottom: 20px;
 }
+
+
+.subscribe-form .button-subscribe {
+  margin-bottom: 104px;
+}
+
+
+
+
 
 /* footer */
 
@@ -293,11 +307,19 @@ body {
   display: flex;
   width: 1200px;
   margin: 0 auto;
+  padding: 40px 0;
 }
 
 .footer-social-list {
   display: flex;
+  flex-wrap: wrap;
   width: 146px;
+  list-style-type: none;
+}
+
+.footer-social-item {
+  width: 47px;
+  height: 40px;
 }
 
 .contacts-phone {
