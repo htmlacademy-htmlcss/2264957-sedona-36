@@ -164,7 +164,6 @@ body {
 
 .advantages-list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -213,7 +212,7 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 101px;
+  margin-top: 102px;
 }
 
 .advantages-description {
@@ -221,10 +220,16 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  margin-bottom: 101px;
+  margin-bottom: 102px;
 }
 
+.advantages-item-wide {
+  display: flex;
+}
 
+.advantages-item-wide-rewerse {
+  flex-direction: row-reverse;
+}
 
 /* recommendation*/
 
