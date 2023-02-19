@@ -255,14 +255,14 @@ body {
   margin-bottom: 102px;
 }
 
-.advantages-item-wide {
+/*.advantages-item-wide {
   display: flex;
   width: 1200px;
-}
+}*/                            /* for flex*/
 
 .advantages-item-wide-rewerse {
   display: flex;
-  flex-direction: row-reverse; /* for flex */
+  flex-direction: row-reverse;
 }
 
 /* recommendation*/
