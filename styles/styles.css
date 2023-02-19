@@ -163,20 +163,51 @@ body {
 }
 
 .advantages-list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  /*display: flex;
+  flex-wrap: wrap;*/ /*for flex*/
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-areas:
+  "city city city"
+  "square road tourist"
+  "devil devil devil";  /* for grid area */
   margin: 0;
   padding: 0;
   list-style-type: none;
   margin-top: 21px;
 }
 
-.advantages-item {
-  background-color: rgba(131, 179, 211, 0.12);
+.advantages-item-city {
+  grid-area: city;
 }
 
-.advantages-item-color {
+
+
+.advantages-item-square {
+  grid-area: square;
+}
+
+.advantages-item-road {
+  grid-area: road;
+}
+
+.advantages-item-tourist {
+  grid-area: tourist;
+}
+
+
+
+.advantages-item-bridge {
+  grid-area: devil;
+}
+
+.advantages-item {
+  background-color: rgba(131, 179, 211, 0.12);
+  width: 400px;
+  min-height: 384px;
+}
+
+.advantages-item-road {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
@@ -213,7 +244,7 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 101px;
+  margin-top: 102px;
 }
 
 .advantages-description {
@@ -221,10 +252,18 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  margin-bottom: 101px;
+  margin-bottom: 102px;
 }
 
+.advantages-item-wide {
+  display: flex;
+  width: 1200px;
+}
 
+.advantages-item-wide-rewerse {
+  display: flex;
+  flex-direction: row-reverse; /* for flex */
+}
 
 /* recommendation*/
 
