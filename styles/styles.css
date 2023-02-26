@@ -76,8 +76,10 @@ body {
 
 
 .navigation-link {
+  position: relative;
   display: block;
   padding: 20px 16px;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -113,6 +115,16 @@ body {
 .navigation-user .navigation-link {
   min-width: 12px;
   min-height: 22px;
+}
+
+.navigation-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    fill: black;
 }
 
 .navigation-button {
@@ -212,6 +224,7 @@ body {
 }
 
 .title-items {
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -239,6 +252,7 @@ body {
 }
 
 .advantages-title {
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -272,6 +286,7 @@ body {
 }
 
 .recommendation-list {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -284,17 +299,38 @@ body {
   width: 400px;
 }
 
-.color {
-  background-color: rgba(131, 179, 211, 0.12);
-}
+
 
 .recommendation-title {
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+}
+
+.recommendation-item-house::before {
+  position: absolute;
+  content: "";
+  background-color: rgba(131, 179, 211, 0.12);
+  background-image: url(../images/main-icon-house.svg);
+  background-size: 75px 72px;
+  background-repeat: no-repeat;
+}
+
+.recommendation-item-food {
+  background-image: url(../images/main-icon-burger.svg);
+  background-size: 74px 70px;
+  background-repeat: no-repeat;
+}
+
+.recommendation-item-present {
+  background-color: rgba(131, 179, 211, 0.12);
+  background-image: url(../images/main-icon-present.svg);
+  background-size: 64px 76px;
+  background-repeat: no-repeat;
 }
 
 /*search*/
@@ -370,6 +406,18 @@ body {
 .footer-social-item {
   width: 47px;
   height: 40px;
+}
+
+footer-social-link:hover .footer-social-vk .footer-social-tg .footer-social-youtube{
+  fill: rgba(104, 162, 202, 1);
+}
+
+footer-social-link:focus .footer-social-vk .footer-social-tg .footer-social-youtube{
+  fill: rgba(104, 162, 202, 1);
+}
+
+footer-social-link:link .footer-social-vk .footer-social-tg .footer-social-youtube{
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .contacts-phone {
