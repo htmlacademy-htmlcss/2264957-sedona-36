@@ -1,0 +1,440 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+/* for sticky footer */
+
+/*
+.advantages {
+  display: none;
+}
+
+.recommendation {
+  display: none;
+}
+
+.search-hotel {
+  display: none;
+}
+
+.subscribe {
+  display: none;
+}
+*/
+
+
+
+
+/* Навигация */
+
+.page-header {
+  color: #333333;
+  background-color: #ffffff;
+  margin-right: 70px;
+}
+
+
+
+.navigation-link {
+  position: relative;
+  display: block;
+  padding: 20px 16px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  background-color: #ffffff;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 507px;
+  list-style-type: none;
+}
+
+.navigation-user {
+  width: 268px;
+  margin-left: auto;
+}
+
+.navigation-user .navigation-link {
+  min-width: 12px;
+  min-height: 22px;
+}
+
+.navigation-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    fill: black;
+}
+
+.navigation-button {
+  width: 160px;
+  height: 36px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #756157;
+  border-radius: 4px;
+  padding: 8px 50px;
+  margin-bottom: 14px;
+  margin-left: 20px;
+}
+
+
+
+/* main */
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* hero*/
+
+.main-text {
+  display: block;
+  margin: 0 auto;
+}
+
+.hero {
+  background-color: #1B313F;
+  background-image: url(../images/index-background.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding-top: 51px;
+  padding-bottom: 82px;
+}
+
+/* advantages*/
+
+.advantages {
+  padding-top: 69px;
+}
+
+.advantages-list {
+  /*display: flex;
+  flex-wrap: wrap;*/ /*for flex*/
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-areas:
+  "city city city"
+  "square road tourist"
+  "devil devil devil";  /* for grid area */
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-top: 21px;
+}
+
+.advantages-item-city {
+  grid-area: city;
+}
+
+
+
+.advantages-item-square {
+  grid-area: square;
+}
+
+.advantages-item-road {
+  grid-area: road;
+}
+
+.advantages-item-tourist {
+  grid-area: tourist;
+}
+
+
+
+.advantages-item-bridge {
+  grid-area: devil;
+}
+
+.advantages-item {
+  background-color: rgba(131, 179, 211, 0.12);
+  width: 400px;
+  min-height: 384px;
+}
+
+.advantages-item-road {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.title-items {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.title-paragraph {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+.index-columns {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  padding-top: 62px;
+}
+
+.index-columns p {
+  color: #FFFFFF;
+}
+
+.advantages-title {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 102px;
+}
+
+.advantages-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  margin-bottom: 102px;
+}
+
+/*.advantages-item-wide {
+  display: flex;
+  width: 1200px;
+}*/                            /* for flex*/
+
+.advantages-item-wide-rewerse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* recommendation*/
+
+.recommendation {
+  padding-top: 64px;
+}
+
+.recommendation-list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-top: 64px;
+}
+
+.recommendation-item {
+  width: 400px;
+}
+
+
+
+.recommendation-title {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.recommendation-item-house::before {
+  position: absolute;
+  content: "";
+  background-color: rgba(131, 179, 211, 0.12);
+  background-image: url(../images/main-icon-house.svg);
+  background-size: 75px 72px;
+  background-repeat: no-repeat;
+}
+
+.recommendation-item-food {
+  background-image: url(../images/main-icon-burger.svg);
+  background-size: 74px 70px;
+  background-repeat: no-repeat;
+}
+
+.recommendation-item-present {
+  background-color: rgba(131, 179, 211, 0.12);
+  background-image: url(../images/main-icon-present.svg);
+  background-size: 64px 76px;
+  background-repeat: no-repeat;
+}
+
+/*search*/
+
+.button-search {
+  background-color: #756157;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.search-hotel {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+/*subscribe*/
+.subscribe {
+  background-color: #1B313F;
+  background-image: url("../images/main-subscribe-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.subscribe p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.button-subscribe {
+  background-color: #82B3D3;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.subscribe {
+  padding-top: 96px;
+  padding-bottom: 104px;
+}
+
+/* footer */
+
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 146px;
+  list-style-type: none;
+}
+
+.footer-social-item {
+  width: 47px;
+  height: 40px;
+}
+
+footer-social-link:hover .footer-social-vk .footer-social-tg .footer-social-youtube{
+  fill: rgba(104, 162, 202, 1);
+}
+
+footer-social-link:focus .footer-social-vk .footer-social-tg .footer-social-youtube{
+  fill: rgba(104, 162, 202, 1);
+}
+
+footer-social-link:link .footer-social-vk .footer-social-tg .footer-social-youtube{
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+.contacts-phone {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.contacts-phone {
+  margin: 0 auto;
+  width: 331;
+}
+
+logo-footer {
+  width: 115;
+}
