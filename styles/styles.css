@@ -73,7 +73,10 @@ body {
   margin-right: 70px;
 }
 
-
+.logo-header {
+  display: block;
+  margin-bottom: -6px;
+}
 
 .navigation-link {
   position: relative;
@@ -133,14 +136,13 @@ body {
 }
 
 .navigation-button {
-  width: 160px;
-  height: 36px;
+  display: block;
+  align-items: center;
   text-align: center;
   color: #FFFFFF;
   background-color: #756157;
   border-radius: 4px;
   padding: 8px 50px;
-  margin-bottom: 14px;
   margin-left: 20px;
 }
 
@@ -149,6 +151,10 @@ body {
 }
 
 .navigation-link-favorites::before {
+  content: "12";
+  font-size: 11px;
+  text-align: center;
+  color: #FFFFFF;
   position: absolute;
   width: 20px;
   height: 20px;
@@ -156,6 +162,7 @@ body {
   border-radius: 50%;
   left: 20px;
   top: 11px;
+  z-index: 1;
 }
 
 
@@ -337,6 +344,7 @@ body {
 }
 
 .recommendation-picture-house::before{
+  content: "";
   background-image: url(../images/main-icon-house.svg);
   background-position: center;
   background-size: 75px 72px;
