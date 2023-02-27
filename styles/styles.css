@@ -93,11 +93,25 @@ body {
   text-transform: capitalize;
 }
 
-.navigation-link:hover {
+/*.navigation-link:hover {
   color: #756257;
   text-decoration: underline;
   text-underline-offset: 20px;
   text-underline-position: under;
+}*/                                    /* Навигация Hover*/
+
+navigation-link-current {
+  position: relative;
+}
+
+navigation-link-current::after {
+  position: absolute;
+  content: "";
+  right: 16px;
+  left: 16px;
+  bottom: 0;
+  height: 2px;
+  background-color: rgba(117, 98, 87, 1);
 }
 
 .navigation {
@@ -192,6 +206,14 @@ body {
   background-repeat: no-repeat;
   padding-top: 51px;
   padding-bottom: 82px;
+}
+
+.hero::after {
+  content: "";
+  background-color: #FFFFFF;
+  background-image: url(../hero-bottom.svg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 /* advantages*/
@@ -442,15 +464,17 @@ body {
   height: 40px;
 }
 
-.footer-social-link:hover .footer-social-icon {
+
+
+.footer-social-link:hover svg{
+  fill: tomato;
+}
+
+footer-social-link:focus svg{
   fill: rgba(104, 162, 202, 1);
 }
 
-footer-social-link:focus .footer-social-icon {
-  fill: rgba(104, 162, 202, 1);
-}
-
-.footer-social-link:link .footer-social-icon {
+.footer-social-link:link svg{
   fill: rgba(104, 162, 202, 0.3);
 }
 
