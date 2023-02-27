@@ -90,7 +90,12 @@ body {
   text-transform: capitalize;
 }
 
-
+.navigation-link:hover {
+  color: #756257;
+  text-decoration: underline;
+  text-underline-offset: 20px;
+  text-underline-position: under;
+}
 
 .navigation {
   display: flex;
@@ -108,7 +113,7 @@ body {
 }
 
 .navigation-user {
-  width: 268px;
+  width: 400px;
   margin-left: auto;
 }
 
@@ -139,6 +144,20 @@ body {
   margin-left: 20px;
 }
 
+.navigation-item {
+  position: relative;
+}
+
+.navigation-link-favorites::before {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #7DB54F;
+  border-radius: 50%;
+  left: 20px;
+  top: 11px;
+}
+
 
 
 /* main */
@@ -161,7 +180,7 @@ body {
 
 .hero {
   background-color: #1B313F;
-  background-image: url(../images/index-background.jpg);
+  background: url(../images/index-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
   padding-top: 51px;
@@ -269,13 +288,14 @@ body {
   margin-bottom: 102px;
 }
 
-/*.advantages-item-wide {
+.advantages-item-wide {
   display: flex;
   width: 1200px;
-}*/                            /* for flex*/
+}
 
 .advantages-item-wide-rewerse {
   display: flex;
+  width: 1200px;
   flex-direction: row-reverse;
 }
 
@@ -311,11 +331,14 @@ body {
   color: #000000;
 }
 
-.recommendation-item-house::before {
-  position: absolute;
-  content: "";
+.recommendation-item-house {
   background-color: rgba(131, 179, 211, 0.12);
+
+}
+
+.recommendation-picture-house::before{
   background-image: url(../images/main-icon-house.svg);
+  background-position: center;
   background-size: 75px 72px;
   background-repeat: no-repeat;
 }
@@ -336,6 +359,9 @@ body {
 /*search*/
 
 .button-search {
+  display: block;
+  width: 376px;
+  height: 52px;
   background-color: #756157;
   font-weight: 700;
   font-size: 20px;
@@ -408,15 +434,15 @@ body {
   height: 40px;
 }
 
-footer-social-link:hover .footer-social-vk .footer-social-tg .footer-social-youtube{
+.footer-social-link:hover .footer-social-icon {
   fill: rgba(104, 162, 202, 1);
 }
 
-footer-social-link:focus .footer-social-vk .footer-social-tg .footer-social-youtube{
+footer-social-link:focus .footer-social-icon {
   fill: rgba(104, 162, 202, 1);
 }
 
-footer-social-link:link .footer-social-vk .footer-social-tg .footer-social-youtube{
+.footer-social-link:link .footer-social-icon {
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -433,6 +459,10 @@ footer-social-link:link .footer-social-vk .footer-social-tg .footer-social-youtu
 .contacts-phone {
   margin: 0 auto;
   width: 331;
+}
+
+.contacts-phone:hover {
+  fill: #756157;
 }
 
 logo-footer {
