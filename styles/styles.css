@@ -99,6 +99,7 @@ body {
   background-color: #ffffff;
   text-decoration: none;
   text-transform: capitalize;
+
 }
 
 /*.navigation-link:hover {
@@ -173,6 +174,7 @@ body {
 
 .navigation-item {
   position: relative;
+
 }
 
 .navigation-link-favorites::before {
@@ -211,6 +213,7 @@ body {
 .page-container {
   width: 1200px;
   margin: 0 auto;
+  background-color: #FFFFFF;
 }
 
 /* hero*/
@@ -232,6 +235,9 @@ body {
 .hero::after {
   position: absolute;
   content: "";
+  width: 1200px;
+  height: 57px;
+  bottom: 240px;
   background-image: url("../hero-bottom.svg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -395,20 +401,26 @@ body {
   content: "";
   background-image: url(../images/main-icon-house.svg);
   background-position: center;
-  background-size: 75px 72px;
+  width: 75px;
+  height: 72px;
   background-repeat: no-repeat;
 }
 
-.recommendation-item-food {
+.recommendation-item-food::after {
+  content: "";
+  width: 75px;
+  height: 72px;
   background-image: url(../images/main-icon-burger.svg);
   background-size: 74px 70px;
   background-repeat: no-repeat;
 }
 
-.recommendation-item-present {
+.recommendation-item-present::before {
+  content: "";
+  width: 75px;
+  height: 72px;
   background-color: rgba(131, 179, 211, 0.12);
   background-image: url(../images/main-icon-present.svg);
-  background-size: 64px 76px;
   background-repeat: no-repeat;
 }
 
