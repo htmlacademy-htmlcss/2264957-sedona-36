@@ -31,6 +31,7 @@ html {
 }
 
 body {
+  width: 1280;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -40,6 +41,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  background-color: #F2F2F2;
 }
 
 /* for sticky footer */
@@ -68,14 +70,20 @@ body {
 /* Навигация */
 
 .page-header {
+  width: 1200px;
   color: #333333;
   background-color: #ffffff;
-  margin-right: 70px;
+  margin: 0 auto;
 }
 
 .logo-header {
   display: block;
   margin-bottom: -6px;
+
+}
+
+.navigation-menu {
+  margin-left: 70px;
 }
 
 .navigation-link {
@@ -98,13 +106,14 @@ body {
   text-decoration: underline;
   text-underline-offset: 20px;
   text-underline-position: under;
-}*/                                    /* Навигация Hover*/
+}*/
+/* Навигация Hover*/
 
-navigation-link-current {
+.navigation-link-current {
   position: relative;
 }
 
-navigation-link-current::after {
+.navigation-link-current::after {
   position: absolute;
   content: "";
   right: 16px;
@@ -127,6 +136,7 @@ navigation-link-current::after {
   padding: 0;
   width: 507px;
   list-style-type: none;
+  padding-left: 70px;
 }
 
 .navigation-user {
@@ -140,23 +150,24 @@ navigation-link-current::after {
 }
 
 .navigation-icon {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    fill: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: black;
+
 }
 
 .navigation-button {
   display: block;
-  align-items: center;
+  align-self: center;
   text-align: center;
   color: #FFFFFF;
   background-color: #756157;
   border-radius: 4px;
-  padding: 8px 50px;
+  padding: 8px 34px;
   margin-left: 20px;
 }
 
@@ -165,7 +176,7 @@ navigation-link-current::after {
 }
 
 .navigation-link-favorites::before {
-  content: "12";
+  content: "";
   font-size: 11px;
   text-align: center;
   color: #FFFFFF;
@@ -177,6 +188,16 @@ navigation-link-current::after {
   left: 20px;
   top: 11px;
   z-index: 1;
+}
+
+.favorites-quantity {
+  position: absolute;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 10px;
+  z-index: 2;
+  bottom: 28px;
+  left: 25px;
 }
 
 
@@ -209,9 +230,9 @@ navigation-link-current::after {
 }
 
 .hero::after {
+  position: absolute;
   content: "";
-  background-color: #FFFFFF;
-  background-image: url(../hero-bottom.svg);
+  background-image: url("../hero-bottom.svg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -224,13 +245,15 @@ navigation-link-current::after {
 
 .advantages-list {
   /*display: flex;
-  flex-wrap: wrap;*/ /*for flex*/
+  flex-wrap: wrap;*/
+  /*for flex*/
   display: grid;
   grid-template-columns: 400px 400px 400px;
   grid-template-areas:
-  "city city city"
-  "square road tourist"
-  "devil devil devil";  /* for grid area */
+    "city city city"
+    "square road tourist"
+    "devil devil devil";
+  /* for grid area */
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -265,6 +288,7 @@ navigation-link-current::after {
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
   min-height: 384px;
+
 }
 
 .advantages-item-road {
@@ -328,6 +352,8 @@ navigation-link-current::after {
   flex-direction: row-reverse;
 }
 
+
+
 /* recommendation*/
 
 .recommendation {
@@ -365,7 +391,7 @@ navigation-link-current::after {
 
 }
 
-.recommendation-picture-house::before{
+.recommendation-picture-house::before {
   content: "";
   background-image: url(../images/main-icon-house.svg);
   background-position: center;
@@ -390,8 +416,7 @@ navigation-link-current::after {
 
 .button-search {
   display: block;
-  width: 376px;
-  height: 52px;
+  padding: 5px 50px;
   background-color: #756157;
   font-weight: 700;
   font-size: 20px;
@@ -464,17 +489,19 @@ navigation-link-current::after {
   height: 40px;
 }
 
-
-
-.footer-social-link:hover svg{
-  fill: tomato;
+.footer-social-link {
+  fill: #83B3D3;
 }
 
-footer-social-link:focus svg{
+.footer-social-link:hover svg {
   fill: rgba(104, 162, 202, 1);
 }
 
-.footer-social-link:link svg{
+footer-social-link:focus svg {
+  fill: rgba(104, 162, 202, 1);
+}
+
+.footer-social-link:active svg {
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -494,9 +521,29 @@ footer-social-link:focus svg{
 }
 
 .contacts-phone:hover {
-  fill: #756157;
+  color: #756157;
 }
 
-logo-footer {
+.contacts-phone:focus {
+  color: #756157;
+}
+
+.contacts-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.logo-footer {
   width: 115;
 }
+
+.logo-footer:hover svg{
+ fill: rgba(117, 97, 87, 1);
+}
+
+.logo-footer:focus svg{
+  fill: rgba(117, 97, 87, 1);
+ }
+
+ .logo-footer:active svg{
+  fill:rgba(117, 97, 87, 0.3);
+ }
