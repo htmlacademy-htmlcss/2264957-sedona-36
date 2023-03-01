@@ -174,6 +174,7 @@ body {
 
 .navigation-item {
   position: relative;
+  align-self: center;
 
 }
 
@@ -319,6 +320,14 @@ body {
   color: #333333;
 }
 
+.advantages-title::after {
+  content:"";
+  display: block;
+  border-bottom: 2px solid black;
+  width: 60px;
+
+}
+
 .index-columns {
   color: #FFFFFF;
   background-color: #82B3D3;
@@ -378,9 +387,11 @@ body {
 
 .recommendation-item {
   width: 400px;
+
 }
-
-
+.advantages-description {
+padding: 0 85px;
+}
 
 .recommendation-title {
   font-family: "PT Sans", sans-serif;
@@ -390,14 +401,23 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  top: 40px;
 }
 
 .recommendation-item-house {
   background-color: rgba(131, 179, 211, 0.12);
 
+
 }
 
-.recommendation-picture-house::before {
+.recommendation-item-present {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.recommendation-item-house::before {
+  display: block;
+  padding-left: 330px;
+  padding-top: 81px;
   content: "";
   background-image: url(../images/main-icon-house.svg);
   background-position: center;
@@ -406,20 +426,26 @@ body {
   background-repeat: no-repeat;
 }
 
-.recommendation-item-food::after {
+.recommendation-picture-food::before {
+  display: block;
+  padding-left: 330px;
+  padding-top: 81px;
   content: "";
+  background-image: url(../images/main-icon-burger.svg);
+  background-position: center;
   width: 75px;
   height: 72px;
-  background-image: url(../images/main-icon-burger.svg);
-  background-size: 74px 70px;
   background-repeat: no-repeat;
 }
 
-.recommendation-item-present::before {
+.recommendation-picture-present::before {
+  display: block;
+  padding-left: 330px;
+  padding-top: 81px;
   content: "";
   width: 75px;
   height: 72px;
-  background-color: rgba(131, 179, 211, 0.12);
+  background-position: center;
   background-image: url(../images/main-icon-present.svg);
   background-repeat: no-repeat;
 }
