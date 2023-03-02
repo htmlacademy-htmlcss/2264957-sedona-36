@@ -70,10 +70,12 @@ body {
 /* Навигация */
 
 .page-header {
-  width: 1200px;
+ width: 1200px;
   color: #333333;
   background-color: #ffffff;
   margin: 0 auto;
+  padding: 0 70px;
+  box-sizing: border-box;
 }
 
 .logo-header {
@@ -126,18 +128,18 @@ body {
 
 .navigation {
   display: flex;
-  width: 1200px;
   margin: 0 auto;
 }
 
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
   width: 507px;
   list-style-type: none;
-  padding-left: 70px;
+
 }
 
 .navigation-user {
@@ -178,20 +180,7 @@ body {
 
 }
 
-.navigation-link-favorites::before {
-  content: "";
-  font-size: 11px;
-  text-align: center;
-  color: #FFFFFF;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: #7DB54F;
-  border-radius: 50%;
-  left: 20px;
-  top: 11px;
-  z-index: 1;
-}
+
 
 .favorites-quantity {
   position: absolute;
@@ -201,6 +190,14 @@ body {
   z-index: 2;
   bottom: 28px;
   left: 25px;
+  height: 20px;
+  padding: 5px;
+  display: flex;
+  background-color: #7DB54F;
+  border-radius: 50%;
+  box-sizing: border-box;
+  align-items: center;
+
 }
 
 
@@ -296,6 +293,7 @@ body {
   width: 400px;
   min-height: 384px;
 
+
 }
 
 .advantages-item-road {
@@ -323,15 +321,15 @@ body {
 .advantages-title::after {
   content:"";
   display: block;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   width: 60px;
-
+  margin: 35px auto 0;
 }
 
 .index-columns {
   color: #FFFFFF;
   background-color: #82B3D3;
-  padding-top: 62px;
+  padding: 100px 50px;
 }
 
 .index-columns p {
@@ -345,7 +343,8 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 102px;
+  padding: 0 85px;
+  margin: 0 0 20px;
 }
 
 .advantages-description {
@@ -353,8 +352,10 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  margin-bottom: 102px;
+  margin: 0;
+  padding: 0 85px;
 }
+
 
 .advantages-item-wide {
   display: flex;
@@ -402,6 +403,7 @@ padding: 0 85px;
   text-transform: uppercase;
   color: #000000;
   top: 40px;
+  padding: 30px 0;
 }
 
 .recommendation-item-house {
@@ -416,14 +418,13 @@ padding: 0 85px;
 
 .recommendation-item-house::before {
   display: block;
-  padding-left: 330px;
-  padding-top: 81px;
   content: "";
   background-image: url(../images/main-icon-house.svg);
   background-position: center;
   width: 75px;
   height: 72px;
   background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
 .recommendation-picture-food::before {
