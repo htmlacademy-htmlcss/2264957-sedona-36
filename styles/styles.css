@@ -70,7 +70,7 @@ body {
 /* Навигация */
 
 .page-header {
- width: 1200px;
+  width: 1200px;
   color: #333333;
   background-color: #ffffff;
   margin: 0 auto;
@@ -189,7 +189,8 @@ body {
   font-size: 10px;
   z-index: 2;
   bottom: 28px;
-  left: 25px;
+  top: 11px;
+  left: 20px;
   height: 20px;
   padding: 5px;
   display: flex;
@@ -222,6 +223,7 @@ body {
 }
 
 .hero {
+  position: relative;
   background-color: #1B313F;
   background: url(../images/index-background.jpg);
   background-size: 100% auto;
@@ -235,7 +237,7 @@ body {
   content: "";
   width: 1200px;
   height: 57px;
-  bottom: 240px;
+  bottom: 0;
   background-image: url("../hero-bottom.svg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -319,7 +321,7 @@ body {
 }
 
 .advantages-title::after {
-  content:"";
+  content: "";
   display: block;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   width: 60px;
@@ -329,7 +331,7 @@ body {
 .index-columns {
   color: #FFFFFF;
   background-color: #82B3D3;
-  padding: 100px 50px;
+padding: 100px 50px;
 }
 
 .index-columns p {
@@ -343,8 +345,11 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  padding: 0 85px;
-  margin: 0 0 20px;
+  margin: 0 0 30px;
+}
+
+.advantages-title-wide {
+  padding-top: 112px;
 }
 
 .advantages-description {
@@ -368,9 +373,17 @@ body {
   flex-direction: row-reverse;
 }
 
-
+.advantages-item-center {
+  padding-top: 112px;
+  box-sizing: border-box;
+}
 
 /* recommendation*/
+
+
+.title-items {
+  margin: 0 20px;
+}
 
 .recommendation {
   padding-top: 64px;
@@ -388,11 +401,11 @@ body {
 
 .recommendation-item {
   width: 400px;
+  padding: 70px 30px;
+  display: block;
+  content: "";
+}
 
-}
-.advantages-description {
-padding: 0 85px;
-}
 
 .recommendation-title {
   font-family: "PT Sans", sans-serif;
@@ -408,7 +421,6 @@ padding: 0 85px;
 
 .recommendation-item-house {
   background-color: rgba(131, 179, 211, 0.12);
-
 
 }
 
@@ -429,27 +441,27 @@ padding: 0 85px;
 
 .recommendation-picture-food::before {
   display: block;
-  padding-left: 330px;
-  padding-top: 81px;
   content: "";
   background-image: url(../images/main-icon-burger.svg);
   background-position: center;
   width: 75px;
   height: 72px;
   background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
 .recommendation-picture-present::before {
   display: block;
-  padding-left: 330px;
-  padding-top: 81px;
   content: "";
   width: 75px;
   height: 72px;
   background-position: center;
   background-image: url(../images/main-icon-present.svg);
   background-repeat: no-repeat;
+  margin: 0 auto;
 }
+
+
 
 /*search*/
 
@@ -464,12 +476,23 @@ padding: 0 85px;
   text-decoration: none;
   text-transform: uppercase;
   color: #FFFFFF;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.title-paragraph-search {
+  max-width: 590px;
 }
 
 .search-hotel {
   padding-top: 96px;
   padding-bottom: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+
 
 /*subscribe*/
 .subscribe {
@@ -483,12 +506,17 @@ padding: 0 85px;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.subscribe p {
-  font-weight: 400;
+.subscribe-paragraph {
+  max-width: 475px;
   font-size: 22px;
+  font-weight: 400;
   line-height: 26px;
+  text-align: center;
 }
 
 .button-subscribe {
@@ -512,15 +540,16 @@ padding: 0 85px;
   display: flex;
   width: 1200px;
   margin: 0 auto;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding: 40px 70px 30px;
+  box-sizing: border-box;
+  align-items: center;
 }
 
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
-  width: 146px;
   list-style-type: none;
+  padding: 0;
 }
 
 .footer-social-item {
@@ -530,6 +559,11 @@ padding: 0 85px;
 
 .footer-social-link {
   fill: #83B3D3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-social-link:hover svg {
@@ -575,14 +609,14 @@ footer-social-link:focus svg {
   width: 115;
 }
 
-.logo-footer:hover svg{
- fill: rgba(117, 97, 87, 1);
+.logo-footer:hover svg {
+  fill: rgba(117, 97, 87, 1);
 }
 
-.logo-footer:focus svg{
+.logo-footer:focus svg {
   fill: rgba(117, 97, 87, 1);
- }
+}
 
- .logo-footer:active svg{
-  fill:rgba(117, 97, 87, 0.3);
- }
+.logo-footer:active svg {
+  fill: rgba(117, 97, 87, 0.3);
+}
