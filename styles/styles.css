@@ -566,14 +566,18 @@ body {
   color: #FFFFFF;
 }
 
-input[type=email] {
-  padding: 14px 345px 14px 20px;
+.field {
+  padding: 8px 20px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+  width: 452px;
+}
 
+.subscribe-form {
+  display: flex;
 }
 
 /* footer */
