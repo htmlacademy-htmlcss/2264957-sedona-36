@@ -80,7 +80,9 @@ body {
 
 .logo-header {
   display: block;
+  position: relative;
   margin-bottom: -6px;
+  z-index: 1;
 
 }
 
@@ -310,6 +312,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+
 }
 
 .title-paragraph {
@@ -318,6 +321,7 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
+  margin-bottom: 64px;
 }
 
 .advantages-title::after {
@@ -328,10 +332,14 @@ body {
   margin: 35px auto 0;
 }
 
+.advantages-item-wide .advantages-title::after {
+  border-bottom: 2px solid #FFFFFF;
+}
+
 .index-columns {
   color: #FFFFFF;
   background-color: #82B3D3;
-padding: 100px 50px;
+  padding: 100px 50px;
 }
 
 .index-columns p {
@@ -376,6 +384,12 @@ padding: 100px 50px;
 .advantages-item-center {
   padding-top: 112px;
   box-sizing: border-box;
+}
+
+.title-items-advantages {
+  position: relative;
+  max-width: 620px;
+  margin: 0 auto;
 }
 
 /* recommendation*/
@@ -461,6 +475,12 @@ padding: 100px 50px;
   margin: 0 auto;
 }
 
+.title-items-recommendation {
+  position: relative;
+  max-width: 505px;
+  margin: 0 auto;
+}
+
 
 
 /*search*/
@@ -527,11 +547,33 @@ padding: 100px 50px;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  border: 0;
+  padding: 8px 50px;
 }
 
 .subscribe {
   padding-top: 96px;
   padding-bottom: 104px;
+}
+
+.title-paragraph-subscribe {
+  max-width: 590px;
+  color: #FFFFFF;
+
+}
+
+.title-items-subscribe {
+  color: #FFFFFF;
+}
+
+input[type=email] {
+  padding: 14px 345px 14px 20px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+
 }
 
 /* footer */
