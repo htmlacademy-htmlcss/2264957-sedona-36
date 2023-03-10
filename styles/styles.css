@@ -65,7 +65,11 @@ body {
 */
 
 
-
+.page-wrap {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  max-width: 1280px;
+  margin: 0 auto;
+}
 
 /* Навигация */
 
@@ -83,7 +87,7 @@ body {
   position: relative;
   margin-bottom: -6px;
   z-index: 1;
-
+  margin-right: 28px;
 }
 
 .navigation-menu {
@@ -136,7 +140,7 @@ body {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+
   margin: 0;
   padding: 0;
   width: 507px;
@@ -147,6 +151,7 @@ body {
 .navigation-user {
   width: 400px;
   margin-left: auto;
+  justify-content: flex-end;
 }
 
 .navigation-user .navigation-link {
@@ -167,13 +172,16 @@ body {
 
 .navigation-button {
   display: block;
+  font-size: 16px;
+  line-height: 20px;
   align-self: center;
   text-align: center;
   color: #FFFFFF;
   background-color: #756157;
   border-radius: 4px;
   padding: 8px 34px;
-  margin-left: 20px;
+  margin-left: 22px;
+  text-transform: uppercase;
 }
 
 .navigation-item {
@@ -312,7 +320,8 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .title-paragraph {
@@ -321,7 +330,11 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
-  margin-bottom: 64px;
+  margin: 0;
+}
+
+.title-paragraph-advantages{
+  margin-bottom: 90px;
 }
 
 .advantages-title::after {
@@ -329,7 +342,7 @@ body {
   display: block;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   width: 60px;
-  margin: 35px auto 0;
+  margin: 30px auto 0;
 }
 
 .advantages-item-wide .advantages-title::after {
@@ -339,7 +352,7 @@ body {
 .index-columns {
   color: #FFFFFF;
   background-color: #82B3D3;
-  padding: 100px 50px;
+  padding: 102px 85px;
 }
 
 .index-columns p {
@@ -353,12 +366,12 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 0 30px;
+  margin: 0 auto 30px;
+  max-width: 175px;
 }
 
-.advantages-title-wide {
-  padding-top: 112px;
-}
+
+
 
 .advantages-description {
   font-weight: 400;
@@ -366,7 +379,6 @@ body {
   line-height: 21px;
   text-align: center;
   margin: 0;
-  padding: 0 85px;
 }
 
 
@@ -382,22 +394,23 @@ body {
 }
 
 .advantages-item-center {
-  padding-top: 112px;
+  padding: 112px 85px;
   box-sizing: border-box;
 }
 
 .title-items-advantages {
   position: relative;
   max-width: 620px;
-  margin: 0 auto;
+  margin-bottom: 25px;
 }
 
+.city-view .bridge-view{
+  object-fit: cover;
+  height: auto;
+}
 /* recommendation*/
 
 
-.title-items {
-  margin: 0 20px;
-}
 
 .recommendation {
   padding-top: 64px;
@@ -415,9 +428,10 @@ body {
 
 .recommendation-item {
   width: 400px;
-  padding: 70px 30px;
+  padding: 85px 81px;
   display: block;
   content: "";
+  box-sizing: border-box;
 }
 
 
@@ -431,6 +445,7 @@ body {
   color: #000000;
   top: 40px;
   padding: 30px 0;
+  margin: 0;
 }
 
 .recommendation-item-house {
@@ -478,11 +493,16 @@ body {
 .title-items-recommendation {
   position: relative;
   max-width: 505px;
+}
+
+.recommendation-description {
+  max-width: 230px;
   margin: 0 auto;
 }
 
-
-
+.title-paragraph-recommendation {
+  margin-bottom: 64px;
+}
 /*search*/
 
 .button-search {
@@ -502,6 +522,8 @@ body {
 
 .title-paragraph-search {
   max-width: 590px;
+  margin-bottom: 54px;
+
 }
 
 .search-hotel {
@@ -518,14 +540,8 @@ body {
 .subscribe {
   background-color: #1B313F;
   background-image: url("../images/main-subscribe-background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -549,6 +565,7 @@ body {
   color: #FFFFFF;
   border: 0;
   padding: 8px 50px;
+  border-radius: 0 4px 4px 0;
 }
 
 .subscribe {
@@ -559,7 +576,7 @@ body {
 .title-paragraph-subscribe {
   max-width: 590px;
   color: #FFFFFF;
-
+  margin-bottom: 54px;
 }
 
 .title-items-subscribe {
@@ -574,6 +591,8 @@ body {
   font-size: 18px;
   line-height: 24px;
   width: 452px;
+  border: none;
+  border-radius: 4px 0 0 4px;
 }
 
 .subscribe-form {
@@ -596,6 +615,7 @@ body {
   flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .footer-social-item {
