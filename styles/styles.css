@@ -190,8 +190,14 @@ body {
 
 .navigation-button:hover,
 .navigation-button:focus {
-  background-color: rgba(125, 181, 79, 1);
+  background-color: rgba(97, 80, 72, 1);
 }
+
+.navigation-button:active {
+  background-color: rgba(117, 97, 87, 1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
 
 
 
@@ -259,7 +265,7 @@ body {
   width: 1200px;
   height: 57px;
   bottom: 0;
-  background-image: url("../hero-bottom.svg");
+  background-image: url("../images/hero-bottom.svg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -284,7 +290,6 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin-top: 21px;
 }
 
 .advantages-item-city {
@@ -415,7 +420,8 @@ body {
   margin-bottom: 25px;
 }
 
-.city-view .bridge-view{
+.city-view,
+.bridge-view{
   object-fit: cover;
   height: auto;
 }
@@ -439,7 +445,7 @@ body {
 
 .recommendation-item {
   width: 400px;
-  padding: 85px 81px;
+  padding: 81px 85px;
   display: block;
   content: "";
   box-sizing: border-box;
@@ -536,11 +542,17 @@ body {
 
 .button-search:hover,
 .button-search:focus {
-  background-color: rgba(125, 181, 79, 1);
+  background-color: rgba(97, 80, 72, 1);
 }
 
 .button-search:active {
-  color: #FFFFFF;
+  background-color: rgba(117, 97, 87, 1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-search:disabled {
+  background-color: #E5E5E5;
+  color: rgba(255, 255, 255, 1);
 }
 
 
@@ -590,12 +602,24 @@ body {
   border: 0;
   padding: 8px 50px;
   border-radius: 0 4px 4px 0;
-  box-sizing: border-box;
+  min-width: 232px;
+  letter-spacing: -2px;
 }
 
 .button-subscribe:hover,
 .button-subscribe:focus {
- background-color: rgba(125, 181, 79, 1)
+ background-color: #68A2CA;
+
+}
+
+.button-subscribe:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-subscribe:disabled {
+  background-color: #E5E5E5;
+  color: rgba(255, 255, 255, 1);
 }
 
 .subscribe {
@@ -626,9 +650,13 @@ body {
 }
 
 
-
 .subscribe-form {
   display: flex;
+  width: 684px;
+}
+
+input::placeholder {
+  color: #3F5E72;
 }
 
 /* footer */
@@ -703,6 +731,10 @@ footer-social-link:focus svg {
 
 .logo-footer {
   width: 115;
+}
+
+.logo-footer svg {
+  display: block;
 }
 
 .logo-footer:hover svg {
