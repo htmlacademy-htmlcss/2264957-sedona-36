@@ -85,7 +85,7 @@ body {
   background-color: #ffffff;
   text-decoration: none;
   text-transform: capitalize;
-
+  outline: none;
 }
 
 /* Навигация Hover*/
@@ -180,7 +180,6 @@ body {
 .navigation-item {
   position: relative;
   align-self: center;
-
 }
 
 .favorites-quantity {
@@ -199,7 +198,6 @@ body {
   border-radius: 50%;
   box-sizing: border-box;
   align-items: center;
-
 }
 
 /* main */
@@ -284,8 +282,6 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
   min-height: 384px;
-
-
 }
 
 .advantages-item-road {
@@ -436,7 +432,7 @@ body {
 .recommendation-item-house::before {
   display: block;
   content: "";
-  background-image: url(../images/main-icon-house.svg);
+  background-image: url("../images/main-icon-house.svg");
   background-position: center;
   width: 75px;
   height: 72px;
@@ -447,7 +443,7 @@ body {
 .recommendation-picture-food::before {
   display: block;
   content: "";
-  background-image: url(../images/main-icon-burger.svg);
+  background-image: url("../images/main-icon-burger.svg");
   background-position: center;
   width: 75px;
   height: 72px;
@@ -461,7 +457,7 @@ body {
   width: 75px;
   height: 72px;
   background-position: center;
-  background-image: url(../images/main-icon-present.svg);
+  background-image: url("../images/main-icon-present.svg");
   background-repeat: no-repeat;
   margin: 0 auto;
 }
@@ -560,6 +556,7 @@ body {
   border-radius: 0 4px 4px 0;
   min-width: 232px;
   letter-spacing: -2px;
+  cursor: pointer;
 }
 
 .button-subscribe:hover,
@@ -586,7 +583,7 @@ body {
 .title-paragraph-subscribe {
   max-width: 475px;
   color: #FFFFFF;
-  margin-bottom: 54px;
+  margin-bottom: 56px;
 }
 
 .title-items-subscribe {
@@ -601,8 +598,9 @@ body {
   font-size: 18px;
   line-height: 24px;
   width: 452px;
-  border: none;
+  border: 4px solid rgba(242, 242, 242, 1);
   border-radius: 4px 0 0 4px;
+  box-sizing: border-box;
 }
 
 .subscribe-form {
@@ -612,23 +610,23 @@ body {
 
 .field:hover {
   background-color: rgba(230, 230, 230, 1);
+  border-color: rgba(230, 230, 230, 1);
 }
 
-input::placeholder {
-  color: rgba(0, 0, 0, 1);
-  Font: PT Sans;
-  Weight: 700;
-  Size: 18px;
-  Line-height: 24px;
+.field::placeholder {
+  color: rgba(0, 0, 0, 0.6);
 }
 
-.field:focus {
+.field:focus-visible {
+  outline: 4px solid rgba(131, 179, 211, 1);
   background-color: rgba(230, 230, 230, 1);
+  border-color: rgba(230, 230, 230, 1);
 }
 
-input:placeholder-shown {
-  border-color: rgba(0, 0, 0, 1);
-  background-color: #F2F2F2;
+.field:not(:placeholder-shown):focus {
+  outline: none;
+  background-color: rgba(230, 230, 230, 1);
+  border-color: black;
 }
 
 /* footer */
