@@ -18,7 +18,6 @@ html {
   height: 100%;
 }
 
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -63,7 +62,6 @@ body {
   display: none;
 }
 */
-
 
 .page-wrap {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -132,8 +130,6 @@ body {
   background-color: rgba(117, 98, 87, 1);
 }
 
-
-
 .navigation {
   display: flex;
   margin: 0 auto;
@@ -169,10 +165,19 @@ body {
   left: 0;
   margin: auto;
   fill: black;
-
 }
 
+.navigation-icon:hover {
+  opacity: 0.8;
+}
 
+.navigation-icon:focus {
+  opacity: 0.6;
+}
+
+.navigation-icon:active {
+  opacity: 0.4;
+}
 
 .navigation-button {
   display: block;
@@ -186,6 +191,7 @@ body {
   padding: 8px 34px;
   margin-left: 22px;
   text-transform: uppercase;
+  outline: none;
 }
 
 .navigation-button:hover,
@@ -198,16 +204,11 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-
-
-
 .navigation-item {
   position: relative;
   align-self: center;
 
 }
-
-
 
 .favorites-quantity {
   position: absolute;
@@ -227,8 +228,6 @@ body {
   align-items: center;
 
 }
-
-
 
 /* main */
 
@@ -296,8 +295,6 @@ body {
   grid-area: city;
 }
 
-
-
 .advantages-item-square {
   grid-area: square;
 }
@@ -309,8 +306,6 @@ body {
 .advantages-item-tourist {
   grid-area: tourist;
 }
-
-
 
 .advantages-item-bridge {
   grid-area: devil;
@@ -349,7 +344,7 @@ body {
   margin: 0;
 }
 
-.title-paragraph-advantages{
+.title-paragraph-advantages {
   margin-bottom: 90px;
 }
 
@@ -386,9 +381,6 @@ body {
   max-width: 175px;
 }
 
-
-
-
 .advantages-description {
   font-weight: 400;
   font-size: 18px;
@@ -396,7 +388,6 @@ body {
   text-align: center;
   margin: 0;
 }
-
 
 .advantages-item-wide {
   display: flex;
@@ -421,13 +412,12 @@ body {
 }
 
 .city-view,
-.bridge-view{
+.bridge-view {
   object-fit: cover;
   height: auto;
 }
+
 /* recommendation*/
-
-
 
 .recommendation {
   padding-top: 64px;
@@ -555,7 +545,6 @@ body {
   color: rgba(255, 255, 255, 1);
 }
 
-
 .title-paragraph-search {
   max-width: 590px;
   margin-bottom: 54px;
@@ -569,8 +558,6 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
-
 
 /*subscribe*/
 .subscribe {
@@ -608,7 +595,7 @@ body {
 
 .button-subscribe:hover,
 .button-subscribe:focus {
- background-color: #68A2CA;
+  background-color: #68A2CA;
 
 }
 
@@ -649,14 +636,30 @@ body {
   border-radius: 4px 0 0 4px;
 }
 
-
 .subscribe-form {
   display: flex;
   width: 684px;
 }
 
+.field:hover {
+  background-color: rgba(230, 230, 230, 1);
+}
+
 input::placeholder {
-  color: #3F5E72;
+  color: rgba(0, 0, 0, 1);
+  Font: PT Sans;
+  Weight: 700;
+  Size: 18px;
+  Line-height: 24px;
+}
+
+.field:focus {
+  background-color: rgba(230, 230, 230, 1);
+}
+
+input:placeholder-shown {
+  border-color: rgba(0, 0, 0, 1) ;
+  background-color: #F2F2F2;
 }
 
 /* footer */
