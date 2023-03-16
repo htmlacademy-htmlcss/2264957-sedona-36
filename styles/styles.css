@@ -619,7 +619,6 @@ body {
 }
 
 .field:focus-visible {
-  outline: 4px solid rgba(131, 179, 211, 1);
   background-color: rgba(230, 230, 230, 1);
   border-color: rgba(230, 230, 230, 1);
 }
