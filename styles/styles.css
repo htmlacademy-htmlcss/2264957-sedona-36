@@ -85,7 +85,6 @@ body {
   background-color: #ffffff;
   text-decoration: none;
   text-transform: capitalize;
-  outline: none;
 }
 
 /* Навигация Hover*/
@@ -483,6 +482,7 @@ body {
   display: block;
   padding: 8px 50px;
   background-color: #756157;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -545,6 +545,7 @@ body {
 
 .button-subscribe {
   background-color: #82B3D3;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -592,7 +593,7 @@ body {
 
 .field {
   padding: 8px 18px;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -618,7 +619,6 @@ body {
 }
 
 .field:focus-visible {
-  outline: 4px solid rgba(131, 179, 211, 1);
   background-color: rgba(230, 230, 230, 1);
   border-color: rgba(230, 230, 230, 1);
 }
